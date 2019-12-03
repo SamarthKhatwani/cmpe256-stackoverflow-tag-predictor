@@ -2,6 +2,19 @@
 <html lang="en">
 
 <head>
+
+    <style> 
+        input[type=submit] {
+          background-color: blue;
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+      </style>
+
   <meta charset="utf-8">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -19,24 +32,22 @@
   <!--header-->
  
   <div>
-    <h1>Hello stack...</h1>
+    <h1>Stack overflow finding similar questions</h1>
     <br/>
     
     
 
     <form method="POST" id="Replacements">
        
-        <h3>Title</h3>
-        <textarea id="tagg" name="tagg"></textarea>
-        <h3>Body</h3>
-        <textarea></textarea>
+        <h3>Question</h3>
+        <textarea id="tagg" name="tagg" cols="100" rows="8"></textarea>
 
-       
-
+        <!--  <h3>Body</h3>
+        <textarea cols="100" rows="8"></textarea> -->
 
       </br>
 
-      <input type="submit" value="Predict tag" name="Predict tag">
+      <input type="submit" value="Find similar questions" name="Predict tag">
 
       <h2> Similar question to given:</h2>
       
